@@ -29,25 +29,15 @@ On `Select Tobii device` click on `Tobii Eye Tracker 4C`.
 
 On `Select application` click on `Tobii Eye Tracking Software Core` and click on `Download`.
 
-Double click on the .exe file and complete the installation process as usual, but don't run the installed app yet.
+Open the .exe file and complete the installation process as usual, but don't run the installed app yet.
 
 Shut down your virtual machine, quit Parallels Desktop® and, if you already connected Tobii Eye Tracker 4C®, disconnect it.
 
-Connect your USB device to your Mac.
+Reconnect Tobii Eye Tracker 4C® to the Mac.
 
-Make sure the device is detected on the Mac side:
+Make sure the Eye Tracker is detected on MacOS:
 
-    In case of an external storage device it should appear in Finder
+    Open System Information (Applications > Utilities > System Information), click System Report
+    Locate the device `EyeTracker` or similar
 
-    In case of other devices (eg. mobile phone):
-        Open System Information (Applications > Utilities > System Information), click System Report
-
-        Locate your device under the USB section.
-
-## Generating video with gaze overlay
-
-Run
-
-    $ python main_post_process.py TRIAL_DIR
-
-Where `TRIAL_DIR` is the directory containing the trial recorded data.
+Reopen Parallels Desktop® and on the upper bar go to `Parallels symbol` > `Preferences` > `Devices`
